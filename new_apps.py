@@ -14,8 +14,6 @@ st.set_page_config(page_title="Vehicle Price Predictor", layout="wide")
 st.title('Australian Vehicle Price Predictor')
 with open('firse.pkl', 'rb') as model_file:
     model,feature_names = pickle.load(model_file)
-with gzip.open('compressed_Pickle.pkl', 'rb') as model_file:
-    model= pickle.load(model_file)
 fea={
     'Brand':['Ssangyong','MG', 'BMW' ,'Mercedes-Benz' ,'Renault' ,'Land' ,'Nissan' ,'Toyota','Honda' ,'Volkswagen' ,'Ford' ,'Mitsubishi' ,'Subaru' ,'Hyundai' ,'Jeep',
  'Volvo' ,'Mazda','Abarth','Holden','Audi','Kia','Mini','Suzuki','Porsche',
